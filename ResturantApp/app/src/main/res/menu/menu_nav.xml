@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/order"
+            android:title="Order"
+            android:icon="@drawable/ic_order"/>
+
+        <item
+            android:id="@+id/booking"
+            android:title="Booking Table"
+            android:icon="@drawable/ic_booking"/>
+        <item android:title="Account">
+        <menu>
+        <item
+            android:id="@+id/profileUser"
+            android:title="@string/profile"
+            android:icon="@drawable/ic_profile"/>
+            <item
+                android:id="@+id/orderStatus"
+                android:title="Order Status"
+                android:icon="@drawable/ic_time"/>
+            <item
+                android:id="@+id/orderHis"
+                android:title="Order History"
+                android:icon="@drawable/ic_list"/>
+            <item
+                android:id="@+id/bookingState"
+                android:title="Table"
+                android:icon="@drawable/ic_booking"/>
+        </menu>
+        </item>
+
+        <item android:title="More">
+            <menu>
+                <item
+                    android:id="@+id/contactUs"
+                    android:title="Contact Us"
+                    android:icon="@drawable/ic_phone"/>
+
+            </menu>
+        </item>
+    </group>
+</menu>

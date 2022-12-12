@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageChange"
+            android:layout_width="121dp"
+            android:layout_height="91dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/homebg" />
+
+        <TextView
+            android:id="@+id/entree_name"
+            android:layout_width="232dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="5dp"
+            android:text="Text View"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/entree_price"
+            android:layout_width="100dp"
+            android:layout_height="29dp"
+            android:text="Text View"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entree_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageButton
+            android:id="@+id/add_cart"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="4dp"
+            android:background="#B00020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.827"
+            app:layout_constraintStart_toEndOf="@+id/entree_price"
+            app:srcCompat="@drawable/ic_cart"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/quantityObj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/add_cart"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/imageChange"
+            app:layout_constraintTop_toBottomOf="@+id/entree_price" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
